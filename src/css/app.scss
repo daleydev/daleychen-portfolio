@@ -1,0 +1,74 @@
+@use 'header';
+@use 'footer';
+@use 'home';
+@use 'about';
+@use 'contact';
+
+
+$shadow-in: inset -3px -3px 7px rgb(255,255,255,0.35), inset 3px 3px 7px rgb(0, 0, 0, 0.1);
+
+$primary-light-color: #c9d4e0;
+$primary-dark-color: #2C353D;
+
+* {
+  margin: 0;
+}
+
+.light-bg{
+  background-color: $primary-light-color;
+}
+
+.dark-bg{
+  background-color: $primary-dark-color;
+}
+
+.light-color {
+  color: $primary-light-color;
+}
+
+.dark-color {
+  color: $primary-dark-color;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  // font-family: 'Roboto', sans-serif;
+  // font-family: "Baloo 2", cursive;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+
+.active {
+  box-shadow: $shadow-in;
+}
+
+// layout 
+.content-box {
+  display: flexbox;
+  width: 80vw;
+  max-width: 1200px;
+  margin: auto;
+  // border: 1px solid gray;
+  padding-top: 30px;
+}
+
+
+.footer-box {
+  position: absolute;
+  width: 80%;
+  max-width: 1200px;
+  bottom: 20px;
+  padding: 0 10vw;
+}
+
+.footer-text-box {
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: gray;
+  font-size: 12px;
+  cursor: default;
+}
+
+

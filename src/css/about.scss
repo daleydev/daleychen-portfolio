@@ -1,0 +1,26 @@
+/* About Content */
+$shadow-on: -5px -5px 7px 2px rgb(255,255,255,0.35), 5px 5px 7px rgb(0, 0, 0, 0.05);
+$shadow-in: inset -3px -3px 7px rgb(255,255,255,0.35), inset 3px 3px 7px rgb(0, 0, 0, 0.1);
+
+.about-box {
+    overflow: auto;
+  width: 80vw;
+  max-width: 1200px;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 7px rgb(94, 104, 121, 0.288);
+  margin: 0 auto;
+
+}
+
+.about-top-box {
+    height: 200px;
+    box-shadow: $shadow-in;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.about-bottom-box {
+    box-shadow: $shadow-in;
+    height: 200px;
+}
