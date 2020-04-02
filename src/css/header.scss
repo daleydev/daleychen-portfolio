@@ -18,7 +18,7 @@ $shadow-in: -3px -3px 7px #ffffff, 3px 3px 7px rgb(94, 104, 121, 0.2);
   height: 60px;
   text-align: center;
   border-radius: 100%;
-
+    cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,13 +38,14 @@ $shadow-in: -3px -3px 7px #ffffff, 3px 3px 7px rgb(94, 104, 121, 0.2);
 }
 
 .link-box {
+    display: flex;
   width: 100px;
-  height: 60px;
-  text-align: center;
+  height: 50px;
   border-radius: 20px;
   margin: 0 20px;
-
-
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .navlink-text {

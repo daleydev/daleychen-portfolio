@@ -1,12 +1,12 @@
 import React, { useContext, useEffect } from "react";
-import { AppContext } from "../context";
+import { AppContext } from "./context";
 import anime from "animejs/lib/anime.es";
 
 // component import
-import Home from './Home'
-import About from './About'
-import Work from './Work'
-import Contact from './Contact'
+import Home from './components/Home'
+import About from './components/About'
+import Work from './components/Work'
+import Contact from './components/Contact'
 
 export default function Content() {
   const { currentPage, setCurrentPage, darkMode } = useContext(

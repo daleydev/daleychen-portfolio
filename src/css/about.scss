@@ -1,26 +1,35 @@
 /* About Content */
-$shadow-on: -5px -5px 7px 2px rgb(255,255,255,0.35), 5px 5px 7px rgb(0, 0, 0, 0.05);
-$shadow-in: inset -3px -3px 7px rgb(255,255,255,0.35), inset 3px 3px 7px rgb(0, 0, 0, 0.1);
 
 .about-box {
-    overflow: auto;
+  overflow: auto;
   width: 80vw;
   max-width: 1200px;
   height: 600px;
   border-radius: 10px;
-  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 7px rgb(94, 104, 121, 0.288);
   margin: 0 auto;
-
 }
 
-.about-top-box {
-    height: 200px;
-    box-shadow: $shadow-in;
+.about-inset-box {
+    overflow: auto;
+    height: 570px;
     margin: 15px;
     border-radius: 10px;
 }
 
-.about-bottom-box {
-    box-shadow: $shadow-in;
-    height: 200px;
+.about-content-box {
+    // text-align: center;
+    width: 80%;
+    margin: 0 auto;
+
+    h1 {
+    text-align: center;
+    padding: 30px 0;
+    }
+
+    p {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
 }
+
+

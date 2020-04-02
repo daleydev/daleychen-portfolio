@@ -55,7 +55,7 @@ $box-radius: 10px;
         padding: 8px 5%;
         border-radius: 10px;
         box-shadow: inset $shadow-light-top, inset $shadow-light-bottom;
-        color: gray;
+        color: black;
         background-color: #c9d4e0;
         width: 90%;
         max-width: 560px;
@@ -69,15 +69,25 @@ $box-radius: 10px;
         padding: 15px 5%;
         border-radius: 10px;
         box-shadow: inset $shadow-light-top, inset $shadow-light-bottom;
-        color: gray;
+        color: black;
         background-color: #c9d4e0;
         width: 90%;
         resize: none;
         font-size: 14px;
         height: 160px;
+
+        
     }
 }
 
+::-webkit-scrollbar {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bec8d3;
+    border-radius: 10px;
+}
 
 
 .contact-button-box {

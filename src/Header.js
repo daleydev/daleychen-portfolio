@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { AppContext } from "../context";
-import sun from "../img/sun.png";
-import moon from "../img/moon.png";
-import logo from '../img/logo.png'
+import { AppContext } from "./context";
+import sun from "./img/sun.png";
+import moon from "./img/moon.png";
+import logo from './img/logo.png';
 
 export default function Header() {
   const { currentPage, setCurrentPage, darkMode, setDarkMode } = useContext(
