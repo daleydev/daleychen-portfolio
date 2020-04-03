@@ -1,5 +1,6 @@
 /* App Header */
-$shadow-in: -3px -3px 7px #ffffff, 3px 3px 7px rgb(94, 104, 121, 0.2);
+$shadow-on: -3px -3px 7px #ffffff, 3px 3px 7px rgb(94, 104, 121, 0.2);
+$shadow-in: inset -3px -3px 7px #ffffff, inset 3px 3px 7px rgb(94, 104, 121, 0.2);
 
 .header-box {
   width: 80vw;
@@ -10,7 +11,12 @@ $shadow-in: -3px -3px 7px #ffffff, 3px 3px 7px rgb(94, 104, 121, 0.2);
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+//   border: 1px solid gray;
+
+  div {
+    // border: 1px solid gray;
+  }
 }
 
 .logo-box {
@@ -23,48 +29,108 @@ $shadow-in: -3px -3px 7px #ffffff, 3px 3px 7px rgb(94, 104, 121, 0.2);
   align-items: center;
   justify-content: center;
 
-  img {
-    width: 100%;
-    height: 100%;
-  }
 
+    
 }
 
-.header-links-box {
-  display: flex;
-  flex-direction: row;
+.logo-inset-box{
+    display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+    width: 70%;
+    height: 70%;
+    border-radius: 100%;
 }
+
+.logo-inner-box {
+    width: 50%;
+    height: 50%;
+    border-radius: 100%;
+}
+
+@keyframes link {
+    from {
+        width: 20px;
+    }
+
+    to {
+        width: 100px;
+    }
+}
+
+@keyframes display {
+    from {
+        margin-right: 60px;
+    }
+
+    to {
+        margin-right: 0px;
+    }
+}
+
+// .header-links-box {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   justify-content: space-evenly;
+// }
 
 .link-box {
-    display: flex;
   width: 100px;
   height: 50px;
-  border-radius: 20px;
-  margin: 0 20px;
+  position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 
+.link-inset-box {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    left: 0;
+}
+
+.link-anime {
+  animation-name: link;
+  animation-duration: .5s;  
+}
+
 .navlink-text {
+
   font-size: 22px;
   color: rgb(107, 107, 107);
-  line-height: 60px;
+  line-height: 50px;
+}
+
+.display-anime {
+    animation-name: display;
+  animation-duration: 1s;
+
+}
+
+
+.dark-mode-toggle-box {
+    display: flex;
+    border-radius: 30px;
+    width: 90px;
+    height: 50px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .dark-mode-box {
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
-  margin: 0 10px;
   justify-content: center;
   align-items: center;
 
   img {
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
   }
 }
