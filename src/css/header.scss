@@ -1,6 +1,4 @@
 /* App Header */
-$shadow-on: -3px -3px 7px #ffffff, 3px 3px 7px rgb(94, 104, 121, 0.2);
-$shadow-in: inset -3px -3px 7px #ffffff, inset 3px 3px 7px rgb(94, 104, 121, 0.2);
 
 .header-box {
   width: 80vw;
@@ -27,10 +25,7 @@ $shadow-in: inset -3px -3px 7px #ffffff, inset 3px 3px 7px rgb(94, 104, 121, 0.2
     cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
-
-
-    
+  justify-content: center;    
 }
 
 .logo-inset-box{
@@ -105,9 +100,14 @@ $shadow-in: inset -3px -3px 7px #ffffff, inset 3px 3px 7px rgb(94, 104, 121, 0.2
   line-height: 50px;
 }
 
+.header-icon {
+  width: 40px;
+  height: 40px;
+}
+
 .display-anime {
     animation-name: display;
-  animation-duration: 1s;
+    animation-duration: 1s;
 
 }
 

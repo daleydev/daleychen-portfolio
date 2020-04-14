@@ -3,7 +3,7 @@ import React, { useState, createContext } from "react";
 export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
-  const [currentPage, setCurrentPage] = useState('work');
+  const [currentPage, setCurrentPage] = useState('home');
   const [darkMode, setDarkMode] = useState(false)
 
   return (

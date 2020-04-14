@@ -7,11 +7,14 @@
 $shadow-in: inset -3px -3px 7px rgb(255, 255, 255, 0.35),
   inset 3px 3px 7px rgb(0, 0, 0, 0.1);
 
-// color variables
+// light colors
 $light-color-default: #c9d4e0;
 $light-color-lighter: #d3deea;
 $light-color-darker: #bec8d3;
-$primary-dark-color: #2c353d;
+// dark colors
+$dark-color-default: #212121;
+$dark-color-lighter: #282828;
+$dark-color-darker: #191919;
 
 $shadow-left-top: -5px -5px 7px;
 $shadow-right-bottom: 5px 5px 7px;
@@ -26,15 +29,16 @@ $shadow-right-bottom: 5px 5px 7px;
 }
 
 .dark-bg {
-  background-color: $primary-dark-color;
+  background-color: $dark-color-default;
 }
 
 .light-color {
-  color: $light-color-default;
+  // color: $light-color-default;
+  color: #ffffff;
 }
 
 .dark-color {
-  color: $primary-dark-color;
+  color: $dark-color-default;
 }
 
 .light-shadow-default {
@@ -46,6 +50,18 @@ $shadow-right-bottom: 5px 5px 7px;
   box-shadow: inset $shadow-left-top $light-color-lighter,
     inset $shadow-right-bottom $light-color-darker;
 }
+
+.dark-shadow-default {
+  box-shadow: $shadow-left-top $dark-color-lighter,
+    $shadow-right-bottom $dark-color-darker;
+}
+
+.dark-shadow-inset {
+  box-shadow: inset $shadow-left-top $dark-color-lighter,
+    inset $shadow-right-bottom $dark-color-darker;
+}
+
+// General Style
 
 .app {
   width: 100vw;
